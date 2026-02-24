@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-blobfuse-demo"
+  name     = "rg-blobfuse"
   location = "Central India"
 }
 
@@ -114,4 +114,5 @@ resource "azurerm_linux_virtual_machine" "vm" {
   }
 
   custom_data = base64encode(file("cloud-init.sh"))
-}
+
+}t
